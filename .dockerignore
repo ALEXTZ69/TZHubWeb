@@ -1,0 +1,22 @@
+# Ignorar node_modules y dependencias locales del frontend
+frontend/node_modules
+frontend/dist
+frontend/package-lock.json
+
+# Ignorar dependencias locales de Python y cachés
+backend/__pycache__
+backend/*.pyc
+backend/env
+backend/.venv
+
+# Ignorar archivos de configuración específicos de desarrollo
+.DS_Store
+.env
+*.log
+*.sqlite3
+
+# Ignorar archivos del sistema y configuraciones de IDEs
+.git
+.gitignore
+.vscode
+.idea

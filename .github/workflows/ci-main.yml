@@ -2,15 +2,14 @@ name: CI/CD for Main Branch
 
 on:
   push:
-    branches:
-      - "main"
+    branches: ["main"]
   pull_request:
-    branches:
-      - "main"
+    branches: ["main"]
 
 jobs:
-  build-and-test:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -18,38 +17,34 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install backend dependencies
         run: |
-          pip install -r backend/requirements.txt
-        working-directory: ./backend
+          cd backend
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Run backend tests
         run: |
-          python -m pytest backend/tests/
-        working-directory: ./backend
+          cd backend
+          python manage.py test
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install frontend dependencies
         run: |
           cd frontend
-          npm install
+          npm install --legacy-peer-deps
 
       - name: Run frontend tests
         run: |
           cd frontend
-          npm test
+          npm run test
 
-  deploy:
-    if: github.ref == 'refs/heads/main'
-    needs: build-and-test
-    runs-on: ubuntu-latest
-    steps:
+      # despliegue
       - name: Deploy to Production
-        run: |
-          echo "Add your deployment commands here"
+        run: echo ""

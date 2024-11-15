@@ -87,6 +87,9 @@
               "src/styles.css"
             ],
             "scripts": []
+            ,"browsers":
+              "ChromeHeadless"
+            
           }
         }
       }

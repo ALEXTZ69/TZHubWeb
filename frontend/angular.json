@@ -88,9 +88,8 @@
             ],
             "scripts": []
             ,"browsers":
-              "ChromeHeadless"
-            ,"karmaConfig":
-              "karma.conf.js"
+              "ChromeHeadless",
+              "karmaConfig": "karma.conf.js"
           }
         }
       }

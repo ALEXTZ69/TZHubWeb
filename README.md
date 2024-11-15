@@ -1,2 +1,2 @@
 # TZHub
-TZHub es una plataforma web que ofrece herramientas útiles como un generador de currículums automáticos, conversor de archivos, y análisis de sentimientos en redes sociales. Próximamente: extracción de texto desde imágenes (OCR) y conversión de video/audio. Todo accesible desde la nube y gratuito.
+TZHub is a web platform providing a variety of tools to simplify everyday and professional tasks. It includes an QR code generator, automatic resume generator, file converter, image-to-text converter (OCR), video/audio format converter, and a multi-platform video downloader. All tools are accessible from the cloud, designed to be free, and feature an intuitive interface with options for guest use.

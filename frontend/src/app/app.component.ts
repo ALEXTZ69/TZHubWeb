@@ -10,8 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     RouterModule,
     NavbarComponent,
-  ]
+  ],
+  
 })
-export class AppComponent {
-  title = 'frontend';
-}
+export class AppComponent {}

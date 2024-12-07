@@ -1,0 +1,135 @@
+/* General navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Espaciado entre izquierda y derecha */
+  align-items: center; /* Centra verticalmente todos los elementos */
+  padding: 1rem 2rem;
+  background-color: #0D6EFD; /* Azul constante */
+  color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección izquierda: Logo y enlaces */
+.navbar-left {
+  display: flex;
+  align-items: center; /* Centra logo y enlaces verticalmente */
+  gap: 1.5rem; /* Espacio entre logo y enlaces */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center; /* Centra logo y texto */
+  font-size: 1.5rem; /* Tamaño del texto del logo */
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navbar-logo-img {
+  height: 32px; /* Tamaño del logo */
+  margin-right: 0.75rem; /* Espacio entre logo y texto */
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 1.25rem; /* Espaciado entre los enlaces */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.1rem; /* Tamaño del texto */
+  line-height: 2rem; /* Altura uniforme */
+}
+
+.navbar-item a:hover {
+  color: #6CA5FF; /* Azul claro en hover */
+}
+
+/* Sección derecha: Controles */
+.navbar-right {
+  display: flex;
+  align-items: center; /* Centra verticalmente todos los elementos */
+  gap: 1.5rem; /* Espacio entre los controles */
+}
+
+.navbar-right select {
+  background-color: #0D6EFD; /* Azul constante */
+  color: #FFFFFF; /* Texto blanco */
+  border: 1px solid #FFFFFF; /* Borde blanco */
+  border-radius: 4px;
+  padding: 0.4rem 1rem; /* Relleno interno consistente */
+  font-size: 1rem; /* Texto legible */
+  line-height: 1.5rem; /* Alineación vertical */
+  height: 2.5rem; /* Altura uniforme */
+  appearance: none; /* Quita estilos nativos del navegador */
+  text-align: center; /* Centra el texto */
+}
+
+.navbar-right select option {
+  background-color: #0D6EFD; /* Fondo azul en las opciones */
+  color: #FFFFFF; /* Texto blanco en las opciones */
+}
+
+.navbar-right select:hover {
+  background-color: #6CA5FF; /* Hover en azul claro */
+}
+
+/* Botón de "Sign up" */
+.btn-signup {
+  padding: 0.4rem 1rem; /* Espaciado interno */
+  background-color: transparent; /* Fondo transparente */
+  color: #FFFFFF; /* Texto blanco como en la imagen */
+  font-weight: bold;
+  border: 2px solid #FFFFFF; /* Borde blanco grueso */
+  border-radius: 4px; /* Bordes redondeados */
+  text-decoration: none;
+  font-size: 1rem; /* Tamaño del texto */
+  height: 2.5rem; /* Altura fija */
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+  transition: all 0.3s ease; /* Suaviza los cambios en hover */
+}
+
+.btn-signup:hover {
+  background-color: #FFFFFF; /* Fondo blanco en hover */
+  color: #0D6EFD; /* Texto azul en hover */
+  border: 2px solid #FFFFFF; /* Mantiene el borde blanco */
+}
+
+.btn-signup:focus,
+.btn-signup:active {
+  outline: none; /* Elimina el borde del foco */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra blanca suave */
+}
+
+
+/* Iconos */
+.navbar-right a i {
+  font-size: 1.4rem; /* Tamaño del icono */
+  line-height: 2.5rem; /* Altura consistente con otros elementos */
+  height: 2.5rem; /* Altura uniforme */
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+}
+
+/* Ajuste uniforme para todos los elementos */
+.navbar-item, .navbar-right select, .btn-signup, .navbar-right a i {
+  height: 2.5rem; /* Altura uniforme */
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+}
+
+/* Hover general para botones y selectores */
+.navbar-item:hover,
+.navbar-right select:hover,
+.btn-signup:hover {
+  cursor: pointer; /* Cursor interactivo */
+}

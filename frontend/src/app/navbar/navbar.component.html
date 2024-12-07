@@ -1,0 +1,33 @@
+<nav class="navbar">
+  <!-- Sección izquierda: Logo y enlaces -->
+  <div class="navbar-left">
+    <a class="navbar-logo" href="#">
+      <img [src]="currentTheme === 'light-theme' ? 'assets/white_panther_logo_sized.png' : 'assets/tz_hub_logo_sized.png'" 
+           alt="Logo" class="navbar-logo-img" />
+      TZ Hub
+    </a>
+    <ul class="navbar-list">
+      <li class="navbar-item"><a href="tools">Tools</a></li>
+      <li class="navbar-item"><a href="about">About Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Sección derecha: Controles -->
+  <div class="navbar-right">
+    <ul class="navbar-list">
+      <li class="navbar-item">
+        <a href="#" (click)="toggleTheme()" title="Switch theme">
+          <i [ngClass]="currentTheme === 'dark-theme' ? 'fas fa-sun' : 'fas fa-moon'"></i>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <select (change)="changeLanguage($event)">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+      </li>
+      <li class="navbar-item"><a href="signin">Sign in</a></li>
+      <li class="navbar-item"><a href="signup" class="btn-signup">Sign up</a></li>
+    </ul>
+  </div>
+</nav>

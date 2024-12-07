@@ -12,4 +12,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     NavbarComponent,
   ]
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'frontend';
+}
